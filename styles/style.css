@@ -205,8 +205,24 @@ nav ul li a:hover {
     max-width: 100%; /* Ensures media container fits within the page */
 }
 
-.media-img, .media-video {
+.media-img {
     max-width: 100%; /* Keeps video within container width */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Crop Container */
+.video-crop-container {
+    width: 100%;          /* Full width of container */
+    height: 60%;          /* Show only 60% of the height to crop 20% from top and bottom */
+    overflow: hidden;     /* Hide overflow to crop video */
+    position: relative;
+}
+
+/* Cropped Video */
+.media-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;    /* Ensures video covers container fully */
+    object-position: 50% 20%; /* Adjust vertical position to center after cropping */
 }
