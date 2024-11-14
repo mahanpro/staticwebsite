@@ -72,3 +72,13 @@ footer {
     vertical-align: middle;
     margin-right: 8px;
 }
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.education-item .icon {
+    margin-right: 10px;
+}
