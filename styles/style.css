@@ -80,5 +80,8 @@ footer {
 }
 
 .education-item .icon {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
     margin-right: 10px;
 }
+
