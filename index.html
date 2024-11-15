@@ -8,23 +8,39 @@
 </head>
 <body>
     <header>
-        <h1>Mahan Pouromidi</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <div class="profile">
+                <img src="assets/photo.jpg" alt="Mahan Pouromidi" class="profile-pic">
+                <div class="contact-info">
+                    <p><img src="assets/icons/email.svg" alt="Email" class="icon"> Email: <a href="mailto:mahanpre@gmail.com">mahanpre@gmail.com</a></p>
+                    <p><img src="assets/icons/linkedin.svg" alt="LinkedIn" class="icon"> LinkedIn: <a href="https://www.linkedin.com/in/mahan-pouromidi-8553a41ba/">Mahan Pouromidi</a></p>
+                    <p><img src="assets/icons/github.svg" alt="GitHub" class="icon"> GitHub: <a href="https://github.com/mahanpro">mahanpro</a></p>
+                </div>
+            </div>
+            <div class="main-title">
+                <h1>Mahan Pouromidi</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm an international master's student in Biomedical Engineering at McMaster University. I specialize in deep learning, computer vision, and healthcare technology solutions.</p>
+        <p>I am an experienced developer with over 4 years of expertise in machine learning (ML) and artificial intelligence (AI), primarily focused on academic and research-driven projects. My technical background spans signal and image processing, algorithm development, and optimization. I am proficient in Python and extensively use ML libraries such as <strong>PyTorch</strong>, <strong>TensorFlow</strong>, and <strong>Scikit-Learn</strong>.</p>
+        <br>
+        <p>As a fast and adaptive learner, I thrive in challenging environments. During my role as a research assistant at U McMaster, I quickly gained proficiency in web development, including HTML, JavaScript, and backend technologies, to successfully design and deploy a fully functional website—despite having no prior experience in this domain.</p>
+        <p>Similarly, while working at NABZ Group, I demonstrated versatility by learning Java and translating MATLAB code into Java within two months, contributing to the development of robust signal processing algorithms.</p>
     </section>
+    
 
     <section id="education">
         <h2>Education</h2>
@@ -48,28 +64,20 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>Master's Thesis: Tumor Segmentation in PET/CT Images</h3>
-            Used U-Net, nnU-Net, Swin-Unet, and SAM for tumor segmentation, with a focus on CNN and transformer-based models. Optimized inference with ONNX and conducted lesion-based analysis.
-            <div class="media-container">
-                <div class="image-group">
-                    <img src="assets/MSc/Msc.png" alt="Tumor segmentation" class="image-group">
-                </div>
+            Used <strong>U-Net</strong>, <strong>nnU-Net</strong>, <strong>Swin-Unet</strong>, and <strong>SAM</strong> for tumor segmentation, with a focus on CNN and <strong>transformer</strong>-based models. Optimized inference with <strong>ONNX</strong> and conducted lesion-based analysis.
+            <div class="media-container center-align">
+                <img src="assets/MSc/Msc.png" alt="Tumor segmentation" class="image-group">
             </div>
         </div>
         <div class="project">
-            <h3>Bachelor's Thesis: Fire Detection with Neural Networks</h3>
+            <h3>Bachelor's Thesis: Fire Detection with Convolutional Neural Networks (CNN)</h3>
             Designed a real-time fire detection system using various neural networks on NVIDIA Jetson Nano, integrating IP camera feeds.
-            <div class="media-container">
-                <div class="image-group">
-                    <img src="assets/BSc/Pic1.jpg" alt="Fire Detection" class="image-group">
-                </div>
-                <div class="media-container">
-                    <div class="video-crop-container">
-                        <video autoplay loop muted playsinline class="media-video">
-                            <source src="assets/BSc/Media1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
+            <div class="media-container2 center-align">
+                <img src="assets/BSc/Pic1.jpg" alt="Fire Detection" class="image-group scale">
+                <video autoplay loop muted playsinline class="media-video">
+                    <source src="assets/BSc/Media1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
@@ -80,16 +88,11 @@
             <img src="assets/icons/mcmaster.svg" alt="McMaster University" class="icon">
             <div>
                 <strong>Research Assistant</strong> <span class="date">(May - Aug 2024)</span><br>
-                <span>McMaster University</span><br>
-                Developed a website for real-time data streaming and motion tracking
-                
-                <div class="media-container">
-                    <div class="video-crop-container">
-                        <video autoplay loop muted playsinline class="media-video">
-                            <source src="assets/Software/meow.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+                <div class="media-container video-aspect-ratio">
+                    <video autoplay loop muted playsinline class="media-video">
+                        <source src="assets/Software/meow.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
@@ -125,26 +128,17 @@
                 <strong>Researcher and Algorithm Developer</strong> <span class="date">(Apr - Dec 2021)</span><br>
                 <span>NABZ Group</span>
                 
-                <!-- Low Frequency Noise Removal Section -->
-                <h3>Low Frequency Noise Removal</h3>
-                <div class="media-container">
-                    <div class="image-group">
-                        <img src="assets/Nabz/Low1.png" alt="Low Frequency Before Denoising" class="image-group">
-                    </div>
-                    <div class="image-group">
-                        <img src="assets/Nabz/Low2.png" alt="Low Frequency After Denoising" class="image-group">
-                    </div>
+                <h3>ECG Noise Removal</h3>
+                <h4>Low Frequency</h4>
+                <div class="media-container center-align">
+                    <img src="assets/Nabz/Low1.png" alt="Low Frequency Before Denoising" class="image-group">
+                    <img src="assets/Nabz/Low2.png" alt="Low Frequency After Denoising" class="image-group">
                 </div>
         
-                <!-- High Frequency Noise Removal Section -->
-                <h3>High Frequency Noise Removal</h3>
-                <div class="media-container">
-                    <div class="image-group">
-                        <img src="assets/Nabz/High1.png" alt="High Frequency Before Denoising" class="image-group">
-                    </div>
-                    <div class="image-group">
-                        <img src="assets/Nabz/High2.png" alt="High Frequency After Denoising" class="image-group">
-                    </div>
+                <h4>High Frequency</h4>
+                <div class="media-container center-align">
+                    <img src="assets/Nabz/High1.png" alt="High Frequency Before Denoising" class="image-group">
+                    <img src="assets/Nabz/High2.png" alt="High Frequency After Denoising" class="image-group">
                 </div>
             </div>
         </div>
